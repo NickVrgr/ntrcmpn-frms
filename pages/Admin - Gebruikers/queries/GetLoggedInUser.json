@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetUsers",
+    "name": "GetLoggedInUser",
     "datasource": {
       "name": "Intercompany_forms",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM vrgr_vargar.users order by id asc;",
+      "body": "select user_email, session_expiration_date from vrgr_vargar.users\nwhere session_id = {{appsmith.store.userSession.session_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,18 +26,24 @@
         }
       ]
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.userSession.session_id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin - Gebruikers_GetUsers",
+  "id": "Admin - Gebruikers_GetLoggedInUser",
   "deleted": false,
-  "gitSyncId": "63aac04e67086437e017196b_63b40e2eb4cde27268a7f780"
+  "gitSyncId": "63aac04e67086437e017196b_63b40da7b4cde27268a7f77c"
 }

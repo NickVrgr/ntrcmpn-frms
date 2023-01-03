@@ -1,8 +1,12 @@
 {
   "pages": [
     {
-      "id": "Formulieren - Overzicht",
+      "id": "Authenticatie",
       "isDefault": true
+    },
+    {
+      "id": "Formulieren - Overzicht",
+      "isDefault": false
     },
     {
       "id": "Formulier invullen",
@@ -22,6 +26,10 @@
     },
     {
       "id": "Admin - Formulier Aanpassen",
+      "isDefault": false
+    },
+    {
+      "id": "Formulier - Werkplekinspectie",
       "isDefault": false
     }
   ],

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1200,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -141,11 +141,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 20,
+              "originalTopRow": 21,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "menuItemsSource": "STATIC",
               "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-              "originalBottomRow": 24,
+              "originalBottomRow": 25,
               "iconAlign": "left",
               "placement": "CENTER"
             },
@@ -332,7 +332,7 @@
                       "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 17,
+                      "originalBottomRow": 18,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
@@ -366,7 +366,7 @@
               "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 19,
+              "originalBottomRow": 20,
               "minDynamicHeight": 10
             },
             {
@@ -823,7 +823,7 @@
                 }
               ],
               "displayName": "JSON Form",
-              "bottomRow": 112,
+              "bottomRow": 82,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Form",
