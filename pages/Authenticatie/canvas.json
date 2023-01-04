@@ -553,7 +553,21 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Authenticatie_JS_User.checkUserLogin",
+              "name": "JS_User.checkUserLogin",
+              "collectionId": "Authenticatie_JS_User",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  GetLoggedInUser.run().then(res => {\n    if (res.length < 1 && appsmith.mode != \"EDIT\" || res[0].session_expiration_date < moment().valueOf() && appsmith.mode != \"EDIT\") {\n      navigateTo(\"Authenticatie\", {}, \"SAME_WINDOW\");\n    } else if (appsmith.mode != \"EDIT\") {\n      UpdateSessionID.run().then(res => storeValue(\"userSession\", res[0])).then(() => navigateTo(\"Overzicht\", {}, \"SAME_WINDOW\"));\n    }\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Authenticatie",
@@ -564,7 +578,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "63aac04e67086437e017196b_63b40ce5b4cde27268a7f75e"

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1330,
+          "bottomRow": 1340,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -379,8 +379,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 27,
-              "bottomRow": 125,
+              "topRow": 28,
+              "bottomRow": 126,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -564,7 +564,7 @@
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "tyue8em2ef",
-                      "serverSidePaginationEnabled": true,
+                      "serverSidePaginationEnabled": false,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
@@ -1350,67 +1350,12 @@
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "tyue8em2ef",
-                      "serverSidePaginationEnabled": true,
+                      "serverSidePaginationEnabled": false,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
                       "isVisiblePagination": false,
                       "verticalAlignment": "CENTER"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Input2",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 84,
-                      "bottomRow": 91,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 19.75,
-                      "resetOnSubmit": true,
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Top",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "6q3154co6v",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 22,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "ij0ti85l5n",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Label",
-                      "version": 2,
-                      "parentId": "tyue8em2ef",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "iconAlign": "left",
-                      "defaultText": "",
-                      "minDynamicHeight": 4
                     }
                   ],
                   "key": "fdecgpd0i3",
@@ -1437,15 +1382,77 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 27,
+              "originalTopRow": 28,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 120,
+              "originalBottomRow": 1505,
               "minDynamicHeight": 10
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "IconButton1",
+              "onClick": "{{navigateTo('Formulieren - Overzicht', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 24,
+              "bottomRow": 28,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "3g9q5fax4n",
+              "isDeprecated": false,
+              "rightColumn": 4,
+              "iconName": "arrow-left",
+              "widgetId": "4o86veiscf",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 24,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 28,
+              "buttonVariant": "PRIMARY"
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Formulier - Werkplekinspectie_JS_User.checkSessionID",
+              "name": "JS_User.checkSessionID",
+              "collectionId": "Formulier - Werkplekinspectie_JS_User",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!appsmith.store?.userSession?.session_id && appsmith.mode != \"EDIT\") {\n    navigateTo(\"Authenticatie\", {}, \"SAME_WINDOW\");\n  } else {\n    JS_User.checkUserLogin();\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Formulier - Werkplekinspectie",
@@ -1456,7 +1463,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "63aac04e67086437e017196b_63b40f0fb4cde27268a7f783"

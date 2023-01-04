@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Admin - Gebruikers",
-    "collectionId": "Admin - Gebruikers_JS_User",
+    "pageId": "Admin - Formulieren",
+    "collectionId": "Admin - Formulieren_JS_User",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin - Gebruikers_JS_User.checkSessionID",
+  "id": "Admin - Formulieren_JS_User.checkSessionID",
   "deleted": false,
-  "gitSyncId": "63aac04e67086437e017196b_63b40d97b4cde27268a7f779"
+  "gitSyncId": "63aac04e67086437e017196b_63b537f7b4cde27268a7f895"
 }

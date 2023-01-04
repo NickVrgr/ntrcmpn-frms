@@ -1135,11 +1135,7 @@
                       "widgetName": "Button_AddUser",
                       "onClick": "{{showModal('Modal_AddUser')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isDisabled"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1165,13 +1161,10 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "isDisabled"
                         }
                       ],
                       "text": "Toevoegen",
-                      "isDisabled": "{{!Input_AddUser.isValid}}",
+                      "isDisabled": false,
                       "key": "eqnihfofg4",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -1566,6 +1559,19 @@
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Admin - Gebruikers_JS_User.checkSessionID",
+              "name": "JS_User.checkSessionID",
+              "collectionId": "Admin - Gebruikers_JS_User",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!appsmith.store?.userSession?.session_id && appsmith.mode != \"EDIT\") {\n    navigateTo(\"Authenticatie\", {}, \"SAME_WINDOW\");\n  } else {\n    JS_User.checkUserLogin();\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
@@ -1578,7 +1584,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "63aac04e67086437e017196b_63aac36767086437e01719ca"

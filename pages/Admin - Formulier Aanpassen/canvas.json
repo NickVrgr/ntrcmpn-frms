@@ -1931,6 +1931,19 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Admin - Formulier Aanpassen_JS_User.checkSessionID",
+              "name": "JS_User.checkSessionID",
+              "collectionId": "Admin - Formulier Aanpassen_JS_User",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  if (!appsmith.store?.userSession?.session_id && appsmith.mode != \"EDIT\") {\n    navigateTo(\"Authenticatie\", {}, \"SAME_WINDOW\");\n  } else {\n    JS_User.checkUserLogin();\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Admin - Formulier Aanpassen_GetFormsContent",
               "name": "GetFormsContent",
               "confirmBeforeExecute": false,
@@ -1952,7 +1965,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "63aac04e67086437e017196b_63ac184f67086437e01719f0"

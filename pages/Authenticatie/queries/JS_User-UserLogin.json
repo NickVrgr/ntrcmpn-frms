@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return LogInUser.run().then(res => {\n    if (res.length > 0) {\n      UpdateInsertSessionID.run({\n        id: res[0].id\n      }).then(res => storeValue(\"userSession\", res[0])).then(() => navigateTo('Formulier - Werkplekinspectie', {}, \"SAME_WINDOW\")).catch(err => showAlert(JSON.stringify(err), 'error'));\n    } else {\n      showAlert('Gebruikersnaam of wachtwoord ongeldig');\n    }\n  }).catch(err => showAlert(JSON.stringify(err), 'error'));\n}",
+      "body": "() => {\n  return LogInUser.run().then(res => {\n    if (res.length > 0) {\n      UpdateInsertSessionID.run({\n        id: res[0].id\n      }).then(res => storeValue(\"userSession\", res[0])).then(() => navigateTo('Overzicht', {}, \"SAME_WINDOW\")).catch(err => showAlert(JSON.stringify(err), 'error'));\n    } else {\n      showAlert('Gebruikersnaam of wachtwoord ongeldig');\n    }\n  }).catch(err => showAlert(JSON.stringify(err), 'error'));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return LogInUser.run().then(res => {\n    if (res.length > 0) {\n      UpdateInsertSessionID.run({\n        id: res[0].id\n      }).then(res => storeValue(\"userSession\", res[0])).then(() => navigateTo('Formulier - Werkplekinspectie', {}, \"SAME_WINDOW\")).catch(err => showAlert(JSON.stringify(err), 'error'));\n    } else {\n      showAlert('Gebruikersnaam of wachtwoord ongeldig');\n    }\n  }).catch(err => showAlert(JSON.stringify(err), 'error'));\n}"
+      "() => {\n  return LogInUser.run().then(res => {\n    if (res.length > 0) {\n      UpdateInsertSessionID.run({\n        id: res[0].id\n      }).then(res => storeValue(\"userSession\", res[0])).then(() => navigateTo('Overzicht', {}, \"SAME_WINDOW\")).catch(err => showAlert(JSON.stringify(err), 'error'));\n    } else {\n      showAlert('Gebruikersnaam of wachtwoord ongeldig');\n    }\n  }).catch(err => showAlert(JSON.stringify(err), 'error'));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
