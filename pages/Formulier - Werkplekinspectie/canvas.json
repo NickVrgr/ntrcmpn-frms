@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1340,
+          "bottomRow": 2310,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -25,130 +25,6 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
-            {
-              "isCompact": false,
-              "boxShadow": "none",
-              "widgetName": "MenuButton1",
-              "configureMenuItems": {
-                "label": "Configure Menu Items",
-                "id": "config",
-                "config": {
-                  "id": "config",
-                  "label": "Menu Item",
-                  "isVisible": true,
-                  "isDisabled": false
-                }
-              },
-              "displayName": "Menu Button",
-              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-              "topRow": 20,
-              "bottomRow": 24,
-              "parentRowSpace": 10,
-              "type": "MENU_BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "menuItems.menuItem1.onClick"
-                },
-                {
-                  "key": "menuItems.menuItem2.onClick"
-                },
-                {
-                  "key": "menuItems.menuItem3.onClick"
-                },
-                {
-                  "key": "menuItems.menuItem7kxwhmfk5s.onClick"
-                },
-                {
-                  "key": "menuItems.menuItemc90sjd200j.onClick"
-                }
-              ],
-              "leftColumn": 0,
-              "dynamicBindingPathList": [
-                {
-                  "key": "menuColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "isDisabled": false,
-              "sourceData": "[]",
-              "key": "n2skrz9m0p",
-              "sourceDataKeys": [],
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "iconName": "list",
-              "menuVariant": "PRIMARY",
-              "widgetId": "rgw8j0wfl9",
-              "menuItems": {
-                "menuItem1": {
-                  "label": "Nieuwe Tijdsregistratie",
-                  "id": "menuItem1",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 0,
-                  "onClick": "{{navigateTo('Gebruiker - Tijd Registratie', {}, 'SAME_WINDOW')}}",
-                  "iconName": "add"
-                },
-                "menuItem2": {
-                  "label": "Registratie dag overzicht",
-                  "id": "menuItem2",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 1,
-                  "onClick": "{{navigateTo('Gebruiker - Per dag', {}, 'SAME_WINDOW')}}",
-                  "iconName": "th-list"
-                },
-                "menuItemc90sjd200j": {
-                  "id": "menuItemc90sjd200j",
-                  "index": 2,
-                  "label": "Registratie week overzicht",
-                  "widgetId": "973wk1xggm",
-                  "isDisabled": false,
-                  "isVisible": true,
-                  "onClick": "{{navigateTo('Gebruiker - Weekoverzicht', {}, 'SAME_WINDOW')}}",
-                  "iconName": "th-list"
-                },
-                "menuItem7kxwhmfk5s": {
-                  "id": "menuItem7kxwhmfk5s",
-                  "index": 3,
-                  "label": "Registratie maand overzicht",
-                  "widgetId": "s9tv375dl9",
-                  "isDisabled": false,
-                  "isVisible": true,
-                  "onClick": "{{navigateTo('Gebruiker - Maandoverzicht', {}, 'SAME_WINDOW')}}",
-                  "iconName": "th-list"
-                },
-                "menuItem3": {
-                  "label": "Instellingen",
-                  "id": "menuItem3",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 4,
-                  "iconName": "settings",
-                  "onClick": "{{navigateTo('Instellingen', {}, 'SAME_WINDOW')}}"
-                }
-              },
-              "isVisible": true,
-              "label": "Menu",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "originalTopRow": 20,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "menuItemsSource": "STATIC",
-              "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-              "originalBottomRow": 24,
-              "iconAlign": "left",
-              "placement": "CENTER"
-            },
             {
               "boxShadow": "none",
               "widgetName": "Header",
@@ -314,7 +190,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Overzicht",
+                      "text": "Checklist Werkplekinspectie",
                       "key": "96k9w1hys0",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -379,8 +255,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 28,
-              "bottomRow": 126,
+              "topRow": 26,
+              "bottomRow": 120,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -401,26 +277,50 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 980,
+                  "bottomRow": 940,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 980,
+                  "minHeight": 940,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "borderColor": "#E0DEDE",
-                      "isVisibleDownload": false,
-                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 55,
-                      "isSortable": false,
-                      "type": "TABLE_WIDGET_V2",
-                      "inlineEditingSaveOption": "CUSTOM",
+                      "boxShadow": "none",
+                      "widgetName": "SelectProject",
+                      "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "isRequired"
+                        }
+                      ],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "labelWidth": "9",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
                       "animateLoading": true,
+                      "parentColumnSpace": 19.05,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 8,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -429,147 +329,263 @@
                           "key": "borderRadius"
                         },
                         {
-                          "key": "boxShadow"
+                          "key": "options"
                         },
                         {
-                          "key": "primaryColumns.test.computedValue"
+                          "key": "isVisible"
                         },
                         {
-                          "key": "primaryColumns.Schrijf_hieronder_1_of_meerdere_positieve_bevindingen_van_de_werkplekinspectie_.computedValue"
+                          "key": "isRequired"
                         }
                       ],
-                      "leftColumn": 2,
-                      "delimiter": ",",
-                      "defaultSelectedRowIndex": 0,
-                      "showInlineEditingOptionDropdown": true,
+                      "labelPosition": "Auto",
+                      "options": "{{GetProjects.data}}",
+                      "placeholderText": "Kies een project",
+                      "isDisabled": false,
+                      "key": "jxoo3svvtb",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": "{{Ordertype.selectedOptionValue == 'Project'}}",
+                      "isDeprecated": false,
+                      "rightColumn": 38,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "eh0gdda0o2",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": false,
-                      "isVisible": true,
-                      "enableClientSideSearch": false,
+                      "isVisible": "{{Ordertype.selectedOptionValue == 'Project'}}",
                       "version": 1,
-                      "totalRecordsCount": 0,
+                      "parentId": "tyue8em2ef",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
                       "isLoading": false,
-                      "childStylesheet": {
-                        "button": {
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "boxShadow": "none"
-                        },
-                        "menuButton": {
-                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "boxShadow": "none"
-                        },
-                        "iconButton": {
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "boxShadow": "none"
-                        },
-                        "editActions": {
-                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                        }
-                      },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "defaultSelectedRowIndices": [
-                        0
+                      "maxDynamicHeight": 9000,
+                      "onOptionChange": "{{UpdateOrders.run(() => {}, () => {})}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Input_WorkorderDescription",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "isRequired"
+                        }
                       ],
-                      "widgetName": "Table1Copy",
-                      "defaultPageSize": 0,
-                      "columnOrder": [
-                        "test",
-                        "Schrijf_hieronder_1_of_meerdere_positieve_bevindingen_van_de_werkplekinspectie_"
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
                       ],
-                      "dynamicPropertyPathList": [],
-                      "displayName": "Table",
-                      "bottomRow": 83,
-                      "columnWidthMap": {
-                        "task": 245,
-                        "step": 62,
-                        "status": 75,
-                        "Inspectiepunten": 274,
-                        "test": 60
-                      },
+                      "topRow": 6,
+                      "bottomRow": 10,
                       "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 21,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "isRequired"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "Naam klant",
+                      "isDisabled": false,
+                      "key": "9d7u6ga4y6",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": "{{Ordertype.selectedOptionValue == 'Werkbon'}}",
+                      "onTextChanged": "{{UpdateOrders.run()}}",
+                      "isDeprecated": false,
+                      "rightColumn": 38,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "sl3r2uqin2",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "errorMessage": "Geen trema of accent gebruiken",
+                      "isVisible": "{{Ordertype.selectedOptionValue == 'Werkbon'}}",
+                      "label": "",
+                      "version": 2,
+                      "parentId": "tyue8em2ef",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "regex": "^[a-zA-Z0-9!@#$&()\\\\-`.+,/\\\" ]*$",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "topRow": 6,
+                      "tooltip": "",
+                      "labelWidth": "9",
+                      "type": "INPUT_WIDGET_V2",
+                      "animateLoading": true,
+                      "resetOnSubmit": true,
+                      "leftColumn": 8,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "defaultText"
+                        },
+                        {
+                          "key": "isRequired"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "Voer een Werkbonnummer in",
+                      "isDisabled": false,
+                      "isRequired": "{{Ordertype.selectedOptionValue == 'Werkbon'}}",
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": "{{Ordertype.selectedOptionValue == 'Werkbon'}}",
+                      "version": 2,
+                      "isLoading": false,
+                      "regex": "[WB]{2}\\d{6}$",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "widgetName": "Input_Workorder",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "isRequired"
+                        }
+                      ],
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
                       "hideCard": false,
                       "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [],
-                      "borderWidth": "1",
-                      "primaryColumns": {
-                        "test": {
-                          "allowCellWrapping": false,
-                          "index": 3,
-                          "width": 150,
-                          "originalId": "test",
-                          "id": "test",
-                          "alias": "test",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test\"]))}}",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "Schrijf_hieronder_1_of_meerdere_positieve_bevindingen_van_de_werkplekinspectie_": {
-                          "allowCellWrapping": false,
-                          "index": 3,
-                          "width": 150,
-                          "originalId": "Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie:",
-                          "id": "Schrijf_hieronder_1_of_meerdere_positieve_bevindingen_van_de_werkplekinspectie_",
-                          "alias": "Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie:",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie:",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie:\"]))}}",
-                          "validation": {},
-                          "cellBackground": ""
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
                         }
-                      },
-                      "key": "c8yutvi1qi",
+                      ],
+                      "labelPosition": "Left",
+                      "key": "jq49sqwq06",
+                      "labelTextSize": "0.875rem",
+                      "onTextChanged": "{{UpdateOrders.run()}}",
                       "isDeprecated": false,
-                      "rightColumn": 64,
-                      "textSize": "0.875rem",
-                      "widgetId": "jglrgodrqf",
-                      "tableData": "[\n  {\n    \"Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie:\": \"\",\n    \"test\": \"1\"\n  },\n\t{\n    \"Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie:\": \"\",\n    \"test\": \"2\"\n  }\n]",
-                      "label": "Data",
-                      "searchKey": "",
+                      "rightColumn": 21,
+                      "widgetId": "2lcb1l8qo5",
+                      "errorMessage": "Geen geldige Werkbonnummer",
+                      "label": "",
                       "parentId": "tyue8em2ef",
-                      "serverSidePaginationEnabled": false,
+                      "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "horizontalAlignment": "LEFT",
-                      "isVisibleSearch": false,
-                      "isVisiblePagination": false,
-                      "verticalAlignment": "CENTER"
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{Ordertype.selectedOptionValue == 'Werkbon' ? 'WB' : ''}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Ordertype",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onSelectionChange"
+                        }
+                      ],
+                      "displayName": "Radio Group",
+                      "iconSVG": "/static/media/icon.ba2b2ee006e51a5c681d7964d7777481.svg",
+                      "searchTags": [
+                        "choice"
+                      ],
+                      "topRow": 2,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "RADIO_GROUP_WIDGET",
+                      "hideCard": false,
+                      "defaultOptionValue": "Project",
+                      "animateLoading": true,
+                      "parentColumnSpace": 18.1826171875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSelectionChange"
+                        }
+                      ],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "onSelectionChange": "{{\nUpdateOrderType.run()\n\t.then(() => {\nresetWidget(\"Input_Workorder\",true);\nresetWidget(\"SelectProject\", true)\t\nresetWidget(\"Input_WorkorderDescription\", true);\t\n}) \n}}\n",
+                      "options": [
+                        {
+                          "label": "Project",
+                          "value": "Project"
+                        },
+                        {
+                          "label": "Werkbon",
+                          "value": "Werkbon"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "wu1ps01u6f",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 7,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "o621ygbsql",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 1,
+                      "parentId": "tyue8em2ef",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "maxDynamicHeight": 9000,
+                      "isInline": false,
+                      "alignment": "left",
+                      "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
@@ -582,8 +598,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 20,
-                      "bottomRow": 24,
+                      "topRow": 21,
+                      "bottomRow": 25,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -593,7 +609,7 @@
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -604,13 +620,13 @@
                       ],
                       "labelPosition": "Left",
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "x3fdwzj212",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 52,
                       "dynamicHeight": "FIXED",
                       "widgetId": "hrxgd2uzz8",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -621,8 +637,10 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "originalTopRow": 21,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "originalBottomRow": 25,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -638,8 +656,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 15,
-                      "bottomRow": 19,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "labelWidth": "6",
                       "autoFocus": false,
@@ -649,7 +667,7 @@
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -666,7 +684,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 52,
                       "dynamicHeight": "FIXED",
                       "widgetId": "feygdrekrh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -677,120 +695,10 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "originalTopRow": 16,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "iconAlign": "left",
-                      "defaultText": "",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopy",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "labelWidth": "6",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 33,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "x3fdwzj212",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 53,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "uhw5921je6",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Datum",
-                      "version": 2,
-                      "parentId": "tyue8em2ef",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "iconAlign": "left",
-                      "defaultText": "",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopy",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 5,
-                      "bottomRow": 9,
-                      "parentRowSpace": 10,
-                      "labelWidth": "6",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 33,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "x3fdwzj212",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 53,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "mlg2c3esxq",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Werknummer",
-                      "version": 2,
-                      "parentId": "tyue8em2ef",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 20,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -817,7 +725,7 @@
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -828,13 +736,13 @@
                       ],
                       "labelPosition": "Left",
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
                       "key": "x3fdwzj212",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 26,
+                      "rightColumn": 31,
                       "dynamicHeight": "FIXED",
                       "widgetId": "025r9admbl",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -873,7 +781,7 @@
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -890,7 +798,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 26,
+                      "rightColumn": 31,
                       "dynamicHeight": "FIXED",
                       "widgetId": "6bkwomws6x",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -929,7 +837,7 @@
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -946,7 +854,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 26,
+                      "rightColumn": 31,
                       "dynamicHeight": "FIXED",
                       "widgetId": "pe8pji5lg6",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -964,56 +872,6 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "widgetName": "Text3",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 1,
-                      "bottomRow": 5,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 1.5,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Checklist Werkplekinspectie",
-                      "key": "6nbaiyt2ap",
-                      "isDeprecated": false,
-                      "rightColumn": 25.5,
-                      "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "d7emtzkn0r",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "tyue8em2ef",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "fontSize": "1.25rem",
-                      "minDynamicHeight": 4
-                    },
-                    {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
@@ -1024,13 +882,13 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 92,
-                      "bottomRow": 96,
+                      "topRow": 88,
+                      "bottomRow": 92,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 49,
+                      "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1043,7 +901,7 @@
                       "isDisabled": false,
                       "key": "ssl265yfxn",
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 59,
                       "isDefaultClickDisabled": true,
                       "widgetId": "ghhgi8zie8",
                       "isVisible": true,
@@ -1052,65 +910,80 @@
                       "parentId": "tyue8em2ef",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "originalTopRow": 88,
                       "disabledWhenInvalid": true,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 92,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 6,
-                      "bottomRow": 10,
-                      "parentRowSpace": 10,
-                      "labelWidth": "7",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
+                      "dateFormat": "DD-MM-YYYY HH:mm",
+                      "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                      "topRow": 11,
+                      "labelWidth": "6",
+                      "type": "DATE_PICKER_WIDGET2",
                       "animateLoading": true,
-                      "parentColumnSpace": 19.75,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
                       "isDisabled": false,
-                      "key": "x3fdwzj212",
-                      "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 26,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "avlk7tijkl",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "label": "Project",
+                      "datePickerType": "DATE_PICKER",
                       "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "minute",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 15,
+                      "closeOnSelection": true,
+                      "widgetName": "DatePicker1",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        },
+                        {
+                          "key": "dateFormat"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 15,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Left",
+                      "key": "cqhpat6ah6",
+                      "labelTextSize": "0.875rem",
+                      "defaultDate": "{{moment()}}",
+                      "isDeprecated": false,
+                      "rightColumn": 52,
+                      "widgetId": "szluau1avl",
+                      "label": "Datum",
                       "parentId": "tyue8em2ef",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalTopRow": 11,
                       "maxDynamicHeight": 9000,
-                      "iconAlign": "left",
-                      "defaultText": "",
+                      "firstDayOfWeek": "1",
+                      "maxDate": "2121-12-31T18:29:00.000Z",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1118,12 +991,15 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 26,
+                      "topRow": 28,
                       "isSortable": false,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "CUSTOM",
                       "animateLoading": true,
                       "dynamicBindingPathList": [
+                        {
+                          "key": "primaryColumns.status.computedValue"
+                        },
                         {
                           "key": "accentColor"
                         },
@@ -1134,25 +1010,40 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "primaryColumns.Inspectiepunten.computedValue"
+                          "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.OK_NOK_NVT.computedValue"
+                          "key": "primaryColumns.id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.Opmerkingen.computedValue"
+                          "key": "primaryColumns.form_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.test.computedValue"
+                          "key": "primaryColumns.form_question.computedValue"
                         },
                         {
-                          "key": "primaryColumns.OK_NOK_NVT.buttonLabel"
+                          "key": "primaryColumns.created_date.computedValue"
                         },
                         {
-                          "key": "primaryColumns.OK_NOK_NVT.menuButtonLabel"
+                          "key": "primaryColumns.last_modified_date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.created_by.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.answer_type.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.list_properties.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.remark.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.category.computedValue"
                         }
                       ],
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -1193,20 +1084,26 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "test",
-                        "Inspectiepunten",
-                        "OK_NOK_NVT",
-                        "Opmerkingen"
+                        "category",
+                        "form_question",
+                        "status",
+                        "remark",
+                        "id",
+                        "form_id",
+                        "created_date",
+                        "last_modified_date",
+                        "created_by",
+                        "answer_type",
+                        "list_properties"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 54,
+                      "bottomRow": 80,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75,
-                        "Inspectiepunten": 274,
-                        "test": 60
+                        "status": 321,
+                        "form_question": 228
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -1214,13 +1111,92 @@
                       "dynamicTriggerPathList": [],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "Inspectiepunten": {
-                          "allowCellWrapping": false,
-                          "index": 3,
+                        "status": {
+                          "index": 2,
                           "width": 150,
-                          "originalId": "Inspectiepunten",
-                          "id": "Inspectiepunten",
-                          "alias": "Inspectiepunten",
+                          "id": "status",
+                          "originalId": "status",
+                          "alias": "status",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "select",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isCellVisible": true,
+                          "isCellEditable": true,
+                          "isDerived": false,
+                          "label": "status",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                          "validation": {},
+                          "labelColor": "#FFFFFF",
+                          "selectOptions": "[\n{\n\"label\":\"OK\"\n,\"value\":\"OK\"\n},\n{\n\"label\":\"NOK\"\n,\"value\":\"NOK\"\n},\n{\n\"label\":\"NVT\"\n,\"value\":\"NVT\"\n}\n]",
+                          "isEditable": true
+                        },
+                        "id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "form_id": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "form_id",
+                          "id": "form_id",
+                          "alias": "form_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "form_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"form_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "form_question": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "form_question",
+                          "id": "form_question",
+                          "alias": "form_question",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1238,59 +1214,157 @@
                           "label": "Inspectiepunten",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Inspectiepunten\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"form_question\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "OK_NOK_NVT": {
+                        "created_date": {
                           "allowCellWrapping": false,
                           "index": 3,
                           "width": 150,
-                          "originalId": "OK NOK NVT",
-                          "id": "OK_NOK_NVT",
-                          "alias": "OK NOK NVT",
+                          "originalId": "created_date",
+                          "id": "created_date",
+                          "alias": "created_date",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "select",
+                          "columnType": "text",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "OK NOK NVT",
+                          "label": "created_date",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"OK NOK NVT\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_date\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
-                          "selectOptions": "[\n{\n\"label\":\"OK\"\n,\"value\":\"OK\"\n}\n,{\n\"label\":\"NOK\"\n,\"value\":\"NOK\"\n}\n,{\n\"label\":\"NVT\"\n,\"value\":\"NVT\"\n}\n]",
-                          "customAlias": "",
-                          "buttonLabel": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'Action'))}}",
-                          "menuButtonLabel": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'Open Menu'))}}",
-                          "menuItems": {
-                            "menuItem1xy0ipjesb": {
-                              "id": "menuItem1xy0ipjesb",
-                              "index": 0,
-                              "label": "OK",
-                              "widgetId": "amelir3yup",
-                              "isDisabled": false,
-                              "isVisible": true
-                            }
-                          }
+                          "cellBackground": ""
                         },
-                        "Opmerkingen": {
+                        "last_modified_date": {
                           "allowCellWrapping": false,
-                          "index": 3,
+                          "index": 4,
                           "width": 150,
-                          "originalId": "Opmerkingen",
-                          "id": "Opmerkingen",
-                          "alias": "Opmerkingen",
+                          "originalId": "last_modified_date",
+                          "id": "last_modified_date",
+                          "alias": "last_modified_date",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "last_modified_date",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_modified_date\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "created_by": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "created_by",
+                          "id": "created_by",
+                          "alias": "created_by",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "created_by",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_by\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "answer_type": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "answer_type",
+                          "id": "answer_type",
+                          "alias": "answer_type",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "answer_type",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"answer_type\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "list_properties": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "list_properties",
+                          "id": "list_properties",
+                          "alias": "list_properties",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "list_properties",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"list_properties\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "remark": {
+                          "allowCellWrapping": false,
+                          "index": 8,
+                          "width": 150,
+                          "originalId": "remark",
+                          "id": "remark",
+                          "alias": "remark",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1305,20 +1379,20 @@
                           "isEditable": true,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Opmerkingen",
+                          "label": "Opmerkingen / afwijkingen",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Opmerkingen\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remark\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "test": {
+                        "category": {
                           "allowCellWrapping": false,
-                          "index": 3,
+                          "index": 10,
                           "width": 150,
-                          "originalId": "test",
-                          "id": "test",
-                          "alias": "test",
+                          "originalId": "category",
+                          "id": "category",
+                          "alias": "category",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1336,21 +1410,20 @@
                           "label": "",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"test\"]))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         }
                       },
-                      "key": "c8yutvi1qi",
+                      "key": "wcghxnqulu",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "textSize": "0.875rem",
-                      "widgetId": "6np6gbgipj",
-                      "tableData": "[\n  {\n    \"Inspectiepunten\": \"Orde en netheid op de werkplek\",\n    \"OK NOK NVT\": \"\",\n    \"Opmerkingen\": \"\",\n    \"test\": \"V1\"\n  },\n\t{\n    \"Inspectiepunten\": \"Minimale risico's aanwezig\",\n    \"OK NOK NVT\": \"\",\n    \"Opmerkingen\": \"\",\n    \"test\": \"V2\"\n  },\n\t{\n    \"Inspectiepunten\": \"Aanwezigheid en gebruik van PBM\",\n    \"OK NOK NVT\": \"\",\n    \"Opmerkingen\": \"\",\n    \"test\": \"V3\"\n  }\n]",
+                      "widgetId": "hq6txrwgkh",
+                      "tableData": "{{GetFormContent.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "tyue8em2ef",
-                      "serverSidePaginationEnabled": false,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
@@ -1382,10 +1455,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 28,
+              "originalTopRow": 26,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 1505,
+              "originalBottomRow": 120,
               "minDynamicHeight": 10
             },
             {
@@ -1399,8 +1472,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 24,
-              "bottomRow": 28,
+              "topRow": 21,
+              "bottomRow": 25,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
@@ -1431,14 +1504,146 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 24,
+              "originalTopRow": 21,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 28,
+              "originalBottomRow": 25,
               "buttonVariant": "PRIMARY"
+            },
+            {
+              "widgetName": "Text3",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 132,
+              "bottomRow": 156,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 6,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "{{Form1.data}}",
+              "key": "gpxdajehbp",
+              "isDeprecated": false,
+              "rightColumn": 22,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "p07a4473m6",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 132,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 156,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "widgetName": "Text4",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 130,
+              "bottomRow": 223,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 31,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "{{Table1.updatedRows}}",
+              "key": "ppetf1zr19",
+              "isDeprecated": false,
+              "rightColumn": 47,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "it84duwrb6",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 130,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 134,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
             }
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Formulier - Werkplekinspectie_GetFormContent",
+              "name": "GetFormContent",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Formulier - Werkplekinspectie_GetProjects",
+              "name": "GetProjects",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Formulier - Werkplekinspectie_JS_User.checkSessionID",

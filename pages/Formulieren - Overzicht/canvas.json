@@ -272,15 +272,6 @@
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.project_id.computedValue"
-                },
-                {
-                  "key": "primaryColumns.workorder.computedValue"
-                },
-                {
-                  "key": "primaryColumns.remarks.computedValue"
-                },
-                {
                   "key": "primaryColumns.created_date.computedValue"
                 },
                 {
@@ -350,9 +341,6 @@
                 "id",
                 "name",
                 "customColumn1",
-                "project_id",
-                "workorder",
-                "remarks",
                 "created_date",
                 "last_modified_date",
                 "created_by"
@@ -401,90 +389,6 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "project_id": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "project_id",
-                  "id": "project_id",
-                  "alias": "project_id",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "project_id",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"project_id\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "workorder": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "workorder",
-                  "id": "workorder",
-                  "alias": "workorder",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "workorder",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"workorder\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "remarks": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "remarks",
-                  "id": "remarks",
-                  "alias": "remarks",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "remarks",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remarks\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
@@ -747,7 +651,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 21,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 25,
               "buttonVariant": "PRIMARY"
             }
           ]
