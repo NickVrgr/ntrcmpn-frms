@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetLoggedInUser",
+    "name": "InsertFormReponse",
     "datasource": {
       "name": "Intercompany_forms",
       "pluginId": "postgres-plugin",
@@ -18,11 +18,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select user_email,user_name, session_expiration_date from vrgr_vargar.users\nwhere session_id = {{appsmith.store.userSession.session_id}}",
+      "body": "insert into vrgr_vargar.forms_response \n(\n\tform_id\n ,response_header\n ,response_body\n ,created_by) \nvalues\n(\n\t2\n\t,'{{Form1.data}}'::json\n\t,'{{Table1.updatedRows}}'::json\n\t,'{{GetLoggedInUser.data[0].user_email}}'\n)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
@@ -36,14 +36,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.userSession.session_id"
+      "Form1.data",
+      "GetLoggedInUser.data[0].user_email",
+      "Table1.updatedRows"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Formulier - Werkplekinspectie_GetLoggedInUser",
+  "id": "Formulier - Werkplekinspectie_InsertFormReponse",
   "deleted": false,
-  "gitSyncId": "63aac04e67086437e017196b_63b53827b4cde27268a7f8b7"
+  "gitSyncId": "63aac04e67086437e017196b_63b6b339b4cde27268a7f900"
 }
