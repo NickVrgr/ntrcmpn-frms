@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_Form",
+    "pageId": "Formulier - Werkplekinspectie",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tinsertForm: () => {\n\t\tvar formobject = {};\n\t\tformobject['formheader'] = [];\n\t\t\n\t\treturn Input_Workorder.__evaluation__.evaluatedValues.label\n\t\t\n\t\tOrdertype == 'Project' ? \n\t\tformobject['formheader'].push({\"label\":SelectProject.selectedOptionLabel, \"value\":SelectProject.selectedOptionValue}) : \n\t\tformobject['formheader'].push({\"label\":\"Werkbon\", \"value\":Input_Workorder.inputText})\n\t\tformobject['formheader'].push({\"label\":\"Klantnaam\", \"value\":Input_WorkorderDescription.inputText});\n\t\t\n\t\tformobject['formheader'].push({\"label\":SelectProject.selectedOptionLabel, \"value\":SelectProject.selectedOptionValue});\n\t\tformobject['formheader'].push({\"label\":\"\", \"value\":SelectProject.selectedOptionValue});\n\t\t\n\t\t\n\t\tformobject['questions'] = []\n\t\tTable_Questions.updatedRows.forEach(question =>\n\t\t\t\tformobject['questions'].push(question.allFields)\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t);\n\t\n\t\t\n\t\tformobject['remarks'] = [];\n\t\tTable_Remarks.updatedRows.forEach(remark =>\n\t\t\t\tformobject['remarks'].push(remark.allFields)\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t);\n\t\t\n\t\treturn formobject;\t\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Formulier - Werkplekinspectie_JS_Form",
+  "deleted": false,
+  "gitSyncId": "63aac04e67086437e017196b_63b7fdc66277e132550de0f5"
+}

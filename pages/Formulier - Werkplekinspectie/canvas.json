@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1280,
+          "bottomRow": 1550,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -256,7 +256,7 @@
                 "group"
               ],
               "topRow": 26,
-              "bottomRow": 120,
+              "bottomRow": 147,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -277,12 +277,12 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 940,
+                  "bottomRow": 1210,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 940,
+                  "minHeight": 1210,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -875,11 +875,14 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{InsertFormReponse.run()}}",
+                      "onClick": "{{InsertFormReponse.run()\n.then(() => SendForm.run())}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
                           "key": "isDisabled"
+                        },
+                        {
+                          "key": "onClick"
                         }
                       ],
                       "displayName": "Button",
@@ -888,8 +891,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 88,
-                      "bottomRow": 92,
+                      "topRow": 114,
+                      "bottomRow": 118,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -898,7 +901,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 47,
+                      "leftColumn": 45,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -911,10 +914,10 @@
                         }
                       ],
                       "text": "versturen",
-                      "isDisabled": "{{ (Table1.updatedRows.length != GetFormContent.data.length) \n|| Table1.updatedRows.some(question => question.updatedFields.status == null)\n}}",
+                      "isDisabled": "{{ (Table_Questions.updatedRows.length != GetFormContent.data.length) \n&& !Table_Questions.updatedRows.some(question => question.updatedFields.status == null)\n}}",
                       "key": "ssl265yfxn",
                       "isDeprecated": false,
-                      "rightColumn": 59,
+                      "rightColumn": 52,
                       "isDefaultClickDisabled": true,
                       "widgetId": "ghhgi8zie8",
                       "isVisible": true,
@@ -1094,7 +1097,7 @@
                       "defaultSelectedRowIndices": [
                         0
                       ],
-                      "widgetName": "Table1",
+                      "widgetName": "Table_Questions",
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "category",
@@ -1148,7 +1151,7 @@
                           "label": "id",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1176,7 +1179,7 @@
                           "label": "form_id",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"form_id\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"form_id\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1204,7 +1207,7 @@
                           "label": "Inspectiepunten",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"form_question\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"form_question\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1232,7 +1235,7 @@
                           "label": "created_date",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_date\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_date\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1260,7 +1263,7 @@
                           "label": "last_modified_date",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_modified_date\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_modified_date\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1288,7 +1291,7 @@
                           "label": "created_by",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_by\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_by\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1316,7 +1319,7 @@
                           "label": "answer_type",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"answer_type\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"answer_type\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1344,7 +1347,7 @@
                           "label": "list_properties",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"list_properties\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"list_properties\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1372,7 +1375,7 @@
                           "label": "",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -1400,7 +1403,7 @@
                           "label": "Status (OK/NOK/NVT)",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                           "validation": {},
                           "cellBackground": "",
                           "selectOptions": "[\n{\n\"label\":\"OK\"\n,\"value\":\"OK\"\n},\n{\n\"label\":\"NOK\"\n,\"value\":\"NOK\"\n},\n{\n\"label\":\"NVT\"\n,\"value\":\"NVT\"\n}\n]"
@@ -1429,7 +1432,7 @@
                           "label": "Opmerkingen / afwijkingen",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remark\"]))}}",
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remark\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         }
@@ -1443,6 +1446,220 @@
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "tyue8em2ef",
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": false,
+                      "isVisiblePagination": false,
+                      "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Input_Remark",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 105,
+                      "bottomRow": 119,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 18.078125,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "7z23fjiprb",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 28,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "w1r6y2szmy",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Opmerkingen",
+                      "version": 2,
+                      "parentId": "tyue8em2ef",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "isVisibleDownload": false,
+                      "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                      "topRow": 81,
+                      "isSortable": false,
+                      "type": "TABLE_WIDGET_V2",
+                      "inlineEditingSaveOption": "CUSTOM",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.step.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.remark.computedValue"
+                        }
+                      ],
+                      "leftColumn": 1,
+                      "delimiter": ",",
+                      "defaultSelectedRowIndex": 0,
+                      "showInlineEditingOptionDropdown": true,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": false,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 1,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "editActions": {
+                          "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "defaultSelectedRowIndices": [
+                        0
+                      ],
+                      "widgetName": "Table_Remarks",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "step",
+                        "remark"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "bottomRow": 102,
+                      "columnWidthMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75
+                      },
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 18.078125,
+                      "dynamicTriggerPathList": [],
+                      "borderWidth": "1",
+                      "primaryColumns": {
+                        "step": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "step",
+                          "id": "step",
+                          "alias": "step",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table_Remarks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "remark": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "remark",
+                          "id": "remark",
+                          "alias": "remark",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Schrijf hieronder 1 of meerdere positieve bevindingen van de werkplekinspectie",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table_Remarks.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remark\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        }
+                      },
+                      "key": "wfva6k65h4",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "textSize": "0.875rem",
+                      "widgetId": "g1g74birta",
+                      "tableData": "[\n  {\n    \"step\": 1,\n    \"remark\": \"\"\n  },\n  {\n    \"step\": 2,\n    \"remark\": \"\"\n  },\n  {\n    \"step\": 3,\n    \"remark\": \"\"\n  }\n]",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "tyue8em2ef",
+                      "serverSidePaginationEnabled": false,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
@@ -1477,7 +1694,7 @@
               "originalTopRow": 26,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 120,
+              "originalBottomRow": 147,
               "minDynamicHeight": 10
             },
             {
