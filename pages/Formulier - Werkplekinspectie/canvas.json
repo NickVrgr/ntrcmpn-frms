@@ -914,7 +914,7 @@
                         }
                       ],
                       "text": "versturen",
-                      "isDisabled": "{{ (Table_Questions.updatedRows.length != GetFormContent.data.length) \n&& !Table_Questions.updatedRows.some(question => question.updatedFields.status == null)\n}}",
+                      "isDisabled": "{{ (Table_Questions.updatedRows.length != GetFormContent.data.length) \n&& !Table_Questions.updatedRows.some(question => question.updatedFields.status == null)\n||\tTable_Remarks.updatedRows.length < 1\n}}",
                       "key": "ssl265yfxn",
                       "isDeprecated": false,
                       "rightColumn": 52,
@@ -1491,7 +1491,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 28,
+                      "rightColumn": 39,
                       "dynamicHeight": "FIXED",
                       "widgetId": "w1r6y2szmy",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",

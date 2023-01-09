@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into vrgr_vargar.forms_response \n(\n\tform_id\n ,response_content\n ,created_by) \nvalues\n(\n\t2\n\t,'{{JS_Form.insertForm()}}'\n\t,'{{GetLoggedInUser.data[0].user_email}}'\n)",
+      "body": "insert into vrgr_vargar.forms_response \n(\n\tform_id\n ,response_content\n ,created_by) \nvalues\n(\n\t2\n\t,'{{JS_Form.createForm()}}'\n\t,'{{GetLoggedInUser.data[0].user_email}}'\n)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "messages": [],
     "jsonPathKeys": [
       "GetLoggedInUser.data[0].user_email",
-      "JS_Form.insertForm()"
+      "JS_Form.createForm()"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
