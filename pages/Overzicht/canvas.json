@@ -414,6 +414,14 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Overzicht_GetSettings",
+              "name": "GetSettings",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Overzicht_JS_User.checkSessionID",
               "name": "JS_User.checkSessionID",
               "collectionId": "Overzicht_JS_User",

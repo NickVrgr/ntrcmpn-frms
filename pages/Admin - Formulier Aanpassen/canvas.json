@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 750,
+          "bottomRow": 790,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -902,7 +902,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 39,
+              "topRow": 34,
               "isSortable": false,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "CUSTOM",
@@ -964,6 +964,15 @@
                 },
                 {
                   "key": "primaryColumns.customColumn2.buttonLabel"
+                },
+                {
+                  "key": "primaryColumns.status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.remark.computedValue"
+                },
+                {
+                  "key": "primaryColumns.category.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -1017,7 +1026,10 @@
                 "created_by",
                 "answer_type",
                 "list_properties",
-                "customColumn2"
+                "customColumn2",
+                "status",
+                "remark",
+                "category"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -1032,7 +1044,7 @@
                 "status": 75,
                 "form_question": 540,
                 "customColumn1": 65.99999999999999,
-                "answer_type": 335
+                "answer_type": 462
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -1341,6 +1353,90 @@
                   "customAlias": "",
                   "buttonLabel": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'Aanpassen'))}}",
                   "onClick": "{{showModal('Modal_UpdateContentFormCopy')}}"
+                },
+                "status": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "status",
+                  "id": "status",
+                  "alias": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "remark": {
+                  "allowCellWrapping": false,
+                  "index": 9,
+                  "width": 150,
+                  "originalId": "remark",
+                  "id": "remark",
+                  "alias": "remark",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "remark",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remark\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "category": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "category",
+                  "id": "category",
+                  "alias": "category",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "category",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "key": "boahwwt5r4",
@@ -1372,8 +1468,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 34,
-              "bottomRow": 38,
+              "topRow": 30,
+              "bottomRow": 34,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
@@ -1454,7 +1550,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton2",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('Modal_AddContentForm')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1467,6 +1563,11 @@
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 58,
                       "dynamicBindingPathList": [
                         {

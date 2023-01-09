@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetForms",
+    "name": "GetSettings",
     "datasource": {
       "name": "Intercompany_forms",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Admin - Formulieren",
+    "pageId": "Overzicht",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM vrgr_vargar.forms where type = 'auto' ORDER BY id desc;",
+      "body": "SELECT * FROM \"vrgr_vargar\".settings;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin - Formulieren_GetForms",
+  "id": "Overzicht_GetSettings",
   "deleted": false,
-  "gitSyncId": "63aac04e67086437e017196b_63ac181867086437e01719ec"
+  "gitSyncId": "63aac04e67086437e017196b_63bc62b66277e132550de140"
 }
