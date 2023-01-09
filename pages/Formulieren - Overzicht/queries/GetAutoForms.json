@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "InsertFormReponse",
+    "name": "GetAutoForms",
     "datasource": {
       "name": "Intercompany_forms",
       "pluginId": "postgres-plugin",
@@ -13,39 +13,31 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Formulier - Werkplekinspectie",
+    "pageId": "Formulieren - Overzicht",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into vrgr_vargar.forms_response \n(\n\tform_id\n ,response_content\n ,created_by) \nvalues\n(\n\t {{appsmith.store.formid}}\n\t,'{{JS_Form.createForm()}}'\n\t,'{{GetLoggedInUser.data[0].user_email}}'\n)",
+      "body": "SELECT * FROM vrgr_vargar.forms where type = 'auto' ORDER BY id desc ;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "GetLoggedInUser.data[0].user_email",
-      "JS_Form.createForm()",
-      "appsmith.store.formid"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Formulier - Werkplekinspectie_InsertFormReponse",
+  "id": "Formulieren - Overzicht_GetAutoForms",
   "deleted": false,
-  "gitSyncId": "63aac04e67086437e017196b_63b6b339b4cde27268a7f900"
+  "gitSyncId": "63aac04e67086437e017196b_63ac0ee167086437e01719d6"
 }
