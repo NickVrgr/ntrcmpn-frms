@@ -18,20 +18,26 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT *, fr.created_date FROM vrgr_vargar.forms_response fr\nleft join vrgr_vargar.forms f on fr.form_id = f.id ORDER BY fr.created_date desc;",
+      "body": "SELECT *, fr.created_date FROM vrgr_vargar.forms_response fr\nleft join vrgr_vargar.forms f on fr.form_id = f.id \nwhere f.id::text  ilike '%{{Select1.selectedOptionValue}}%'\nORDER BY fr.created_date desc;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Select1.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
