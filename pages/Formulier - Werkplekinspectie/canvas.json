@@ -1057,6 +1057,9 @@
                         },
                         {
                           "key": "primaryColumns.remark.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.sequence.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -1110,7 +1113,8 @@
                         "last_modified_date",
                         "created_by",
                         "answer_type",
-                        "list_properties"
+                        "list_properties",
+                        "sequence"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -1433,6 +1437,34 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remark\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "sequence": {
+                          "allowCellWrapping": false,
+                          "index": 11,
+                          "width": 150,
+                          "originalId": "sequence",
+                          "id": "sequence",
+                          "alias": "sequence",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "sequence",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table_Questions.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sequence\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         }

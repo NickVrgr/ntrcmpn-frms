@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_User",
+    "pageId": "Admin - Overzicht formulieren",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcheckUserLogin: () => {\n\t\tGetLoggedInUser.run()\n\t\t\t.then((res) => {\n\t\t\tif ((res.length < 1 && appsmith.mode != \"EDIT\") || (res[0].session_expiration_date < moment().valueOf() && appsmith.mode != \"EDIT\")) {\n\t\t\t\tnavigateTo(\"Authenticatie\", {}, \"SAME_WINDOW\")\n\t\t\t}\n\t\t})\n\t},\n\n\tcheckSessionID: () => {\n\t\tif (!appsmith.store?.userSession?.session_id && appsmith.mode != \"EDIT\" ) {\n\t\t\tnavigateTo(\"Authenticatie\", {}, \"SAME_WINDOW\")\n\t\t} else {\n\t\t\tthis.checkUserLogin();\n\t\t}\n\t},\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Admin - Overzicht formulieren_JS_User",
+  "deleted": false,
+  "gitSyncId": "63aac04e67086437e017196b_63bd3d746277e132550de163"
+}

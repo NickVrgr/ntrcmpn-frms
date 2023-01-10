@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 580,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -25,6 +25,59 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button1Copy",
+              "onClick": "{{navigateTo('Admin - Formulieren', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 36,
+              "bottomRow": 42,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 21,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Admin - Formulieren beheren",
+              "isDisabled": false,
+              "key": "m95n4j5bif",
+              "isDeprecated": false,
+              "rightColumn": 46,
+              "isDefaultClickDisabled": true,
+              "widgetId": "834kp7xgbe",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 36,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 42,
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
             {
               "boxShadow": "none",
               "widgetName": "IconButton1",
@@ -68,9 +121,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 21,
+              "originalTopRow": 23,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 25,
+              "originalBottomRow": 27,
               "buttonVariant": "PRIMARY"
             },
             {
@@ -297,7 +350,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
-              "onClick": "{{navigateTo('Admin - Formulieren', {}, 'SAME_WINDOW')}}",
+              "onClick": "{{navigateTo('Admin - Overzicht formulieren', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -326,7 +379,7 @@
                   "key": "borderRadius"
                 }
               ],
-              "text": "Admin - Formulieren",
+              "text": "Admin - Ingevulde Formulieren",
               "isDisabled": false,
               "key": "m95n4j5bif",
               "isDeprecated": false,
@@ -358,8 +411,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 38,
-              "bottomRow": 44,
+              "topRow": 44,
+              "bottomRow": 50,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -392,10 +445,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 38,
+              "originalTopRow": 44,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 44,
+              "originalBottomRow": 50,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }

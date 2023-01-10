@@ -39,6 +39,10 @@
     {
       "id": "Admin - Formulier Aanpassen",
       "isDefault": false
+    },
+    {
+      "id": "Admin - Overzicht formulieren",
+      "isDefault": false
     }
   ],
   "viewMode": false,
