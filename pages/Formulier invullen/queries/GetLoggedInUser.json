@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select user_email,user_name, session_expiration_date from vrgr_intercompany.users\nwhere session_id = {{appsmith.store.userSession.session_id}}",
+      "body": "select user_email,user_name, session_expiration_date from vrgr_vargar.users\nwhere session_id = {{appsmith.store.userSession.session_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

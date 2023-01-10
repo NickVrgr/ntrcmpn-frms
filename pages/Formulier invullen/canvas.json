@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 900,
+          "bottomRow": 660,
           "containerStyle": "none",
           "snapRows": 79,
           "parentRowSpace": 1,
@@ -25,130 +25,6 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
-            {
-              "isCompact": false,
-              "boxShadow": "none",
-              "widgetName": "MenuButton1",
-              "configureMenuItems": {
-                "label": "Configure Menu Items",
-                "id": "config",
-                "config": {
-                  "id": "config",
-                  "label": "Menu Item",
-                  "isVisible": true,
-                  "isDisabled": false
-                }
-              },
-              "displayName": "Menu Button",
-              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-              "topRow": 21,
-              "bottomRow": 25,
-              "parentRowSpace": 10,
-              "type": "MENU_BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "menuItems.menuItem1.onClick"
-                },
-                {
-                  "key": "menuItems.menuItem2.onClick"
-                },
-                {
-                  "key": "menuItems.menuItem3.onClick"
-                },
-                {
-                  "key": "menuItems.menuItem7kxwhmfk5s.onClick"
-                },
-                {
-                  "key": "menuItems.menuItemc90sjd200j.onClick"
-                }
-              ],
-              "leftColumn": 0,
-              "dynamicBindingPathList": [
-                {
-                  "key": "menuColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "isDisabled": false,
-              "sourceData": "[]",
-              "key": "n2skrz9m0p",
-              "sourceDataKeys": [],
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "iconName": "list",
-              "menuVariant": "PRIMARY",
-              "widgetId": "rgw8j0wfl9",
-              "menuItems": {
-                "menuItem1": {
-                  "label": "Nieuwe Tijdsregistratie",
-                  "id": "menuItem1",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 0,
-                  "onClick": "{{navigateTo('Gebruiker - Tijd Registratie', {}, 'SAME_WINDOW')}}",
-                  "iconName": "add"
-                },
-                "menuItem2": {
-                  "label": "Registratie dag overzicht",
-                  "id": "menuItem2",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 1,
-                  "onClick": "{{navigateTo('Gebruiker - Per dag', {}, 'SAME_WINDOW')}}",
-                  "iconName": "th-list"
-                },
-                "menuItemc90sjd200j": {
-                  "id": "menuItemc90sjd200j",
-                  "index": 2,
-                  "label": "Registratie week overzicht",
-                  "widgetId": "973wk1xggm",
-                  "isDisabled": false,
-                  "isVisible": true,
-                  "onClick": "{{navigateTo('Gebruiker - Weekoverzicht', {}, 'SAME_WINDOW')}}",
-                  "iconName": "th-list"
-                },
-                "menuItem7kxwhmfk5s": {
-                  "id": "menuItem7kxwhmfk5s",
-                  "index": 3,
-                  "label": "Registratie maand overzicht",
-                  "widgetId": "s9tv375dl9",
-                  "isDisabled": false,
-                  "isVisible": true,
-                  "onClick": "{{navigateTo('Gebruiker - Maandoverzicht', {}, 'SAME_WINDOW')}}",
-                  "iconName": "th-list"
-                },
-                "menuItem3": {
-                  "label": "Instellingen",
-                  "id": "menuItem3",
-                  "widgetId": "",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 4,
-                  "iconName": "settings",
-                  "onClick": "{{navigateTo('Instellingen', {}, 'SAME_WINDOW')}}"
-                }
-              },
-              "isVisible": true,
-              "label": "Menu",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "originalTopRow": 21,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "menuItemsSource": "STATIC",
-              "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-              "originalBottomRow": 25,
-              "iconAlign": "left",
-              "placement": "CENTER"
-            },
             {
               "boxShadow": "none",
               "widgetName": "Header",
@@ -409,76 +285,22 @@
                   "key": "sourceData"
                 },
                 {
-                  "key": "schema.__root_schema__.children.Is_de_bouwplaats_schoon_.defaultValue"
+                  "key": "schema.__root_schema__.children.Was_de_bouwplaats_opgeruimd_bij_aankomst_.defaultValue"
                 },
                 {
-                  "key": "schema.__root_schema__.children.Is_de_bouwplaats_schoon_.accentColor"
+                  "key": "schema.__root_schema__.children.Was_de_bouwplaats_opgeruimd_bij_aankomst_.accentColor"
                 },
                 {
-                  "key": "schema.__root_schema__.children.Is_de_bouwplaats_schoon_.borderRadius"
+                  "key": "schema.__root_schema__.children.Was_de_bouwplaats_opgeruimd_bij_aankomst_.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.Zijn_alle_spullen_teruggelegd_in_de_container.defaultValue"
+                  "key": "schema.__root_schema__.children.Waren_er_andere_mensen_aanwezig_bij_aankomst_.defaultValue"
                 },
                 {
-                  "key": "schema.__root_schema__.children.Zijn_alle_spullen_teruggelegd_in_de_container.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.is_de_bouwplaats_opgeruimd_.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.is_de_bouwplaats_opgeruimd_.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Datum_van_controle_.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Datum_van_controle_.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Datum_van_controle_.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Zijn_alle_spullen_teruggelegd_in_de_container.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.cellBorderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.cellBorderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.children.artikel.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.children.artikel.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.children.hoeveelheid.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.children.hoeveelheid.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.children.ean.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_.children.__array_item__.children.ean.borderRadius"
+                  "key": "schema.__root_schema__.children.Waren_er_andere_mensen_aanwezig_bij_aankomst_.accentColor"
                 }
               ],
-              "showReset": true,
+              "showReset": false,
               "dynamicHeight": "AUTO_HEIGHT",
               "autoGenerateForm": true,
               "resetButtonStyles": {
@@ -490,7 +312,7 @@
               "isVisible": true,
               "version": 1,
               "isLoading": false,
-              "submitButtonLabel": "Submit",
+              "submitButtonLabel": "Versturen",
               "childStylesheet": {
                 "ARRAY": {
                   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -570,43 +392,21 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 82,
+              "originalBottomRow": 51,
               "schema": {
                 "__root_schema__": {
                   "children": {
-                    "Is_de_bouwplaats_schoon_": {
-                      "children": {},
-                      "dataType": "number",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Is de bouwplaats schoon?\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Number Input",
-                      "sourceData": 0,
-                      "isCustomField": false,
-                      "accessor": "Is de bouwplaats schoon?",
-                      "identifier": "Is_de_bouwplaats_schoon_",
-                      "position": 0,
-                      "originalIdentifier": "Is de bouwplaats schoon?",
-                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "boxShadow": "none",
-                      "iconAlign": "left",
-                      "isDisabled": false,
-                      "isRequired": false,
-                      "isSpellCheck": false,
-                      "isVisible": true,
-                      "labelTextSize": "0.875rem",
-                      "label": "Is De Bouwplaats Schoon"
-                    },
-                    "Zijn_alle_spullen_teruggelegd_in_de_container": {
+                    "Was_de_bouwplaats_opgeruimd_bij_aankomst_": {
                       "children": {},
                       "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Zijn alle spullen teruggelegd in de container\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Was de bouwplaats opgeruimd bij aankomst?\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "fieldType": "Text Input",
                       "sourceData": "",
                       "isCustomField": false,
-                      "accessor": "Zijn alle spullen teruggelegd in de container",
-                      "identifier": "Zijn_alle_spullen_teruggelegd_in_de_container",
-                      "position": 1,
-                      "originalIdentifier": "Zijn alle spullen teruggelegd in de container",
+                      "accessor": "Was de bouwplaats opgeruimd bij aankomst?",
+                      "identifier": "Was_de_bouwplaats_opgeruimd_bij_aankomst_",
+                      "position": 0,
+                      "originalIdentifier": "Was de bouwplaats opgeruimd bij aankomst?",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "boxShadow": "none",
@@ -616,19 +416,19 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Zijn Alle Spullen Teruggelegd In De Container"
+                      "label": "Was De Bouwplaats Opgeruimd Bij Aankomst"
                     },
-                    "is_de_bouwplaats_opgeruimd_": {
+                    "Waren_er_andere_mensen_aanwezig_bij_aankomst_": {
                       "children": {},
                       "dataType": "boolean",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"is de bouwplaats opgeruimd?\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Waren er andere mensen aanwezig bij aankomst?\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "fieldType": "Switch",
                       "sourceData": true,
                       "isCustomField": false,
-                      "accessor": "is de bouwplaats opgeruimd?",
-                      "identifier": "is_de_bouwplaats_opgeruimd_",
-                      "position": 2,
-                      "originalIdentifier": "is de bouwplaats opgeruimd?",
+                      "accessor": "Waren er andere mensen aanwezig bij aankomst?",
+                      "identifier": "Waren_er_andere_mensen_aanwezig_bij_aankomst_",
+                      "position": 1,
+                      "originalIdentifier": "Waren er andere mensen aanwezig bij aankomst?",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                       "boxShadow": "none",
                       "alignWidget": "LEFT",
@@ -636,151 +436,7 @@
                       "isRequired": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Is De Bouwplaats Opgeruimd"
-                    },
-                    "Datum_van_controle_": {
-                      "children": {},
-                      "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData[\"Datum van controle?\"], \"DD-MM-YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Datepicker",
-                      "sourceData": "28-12-2022",
-                      "isCustomField": false,
-                      "accessor": "Datum van controle?",
-                      "identifier": "Datum_van_controle_",
-                      "position": 3,
-                      "originalIdentifier": "Datum van controle?",
-                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "boxShadow": "none",
-                      "closeOnSelection": false,
-                      "convertToISO": false,
-                      "dateFormat": "DD-MM-YYYY",
-                      "isDisabled": false,
-                      "isRequired": false,
-                      "isVisible": true,
-                      "label": "Datum Van Controle",
-                      "maxDate": "2121-12-31T18:29:00.000Z",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "shortcuts": false,
-                      "timePrecision": "minute",
-                      "labelTextSize": "0.875rem"
-                    },
-                    "Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_": {
-                      "children": {
-                        "__array_item__": {
-                          "children": {
-                            "artikel": {
-                              "children": {},
-                              "dataType": "string",
-                              "fieldType": "Text Input",
-                              "sourceData": "",
-                              "isCustomField": false,
-                              "accessor": "artikel",
-                              "identifier": "artikel",
-                              "position": 0,
-                              "originalIdentifier": "artikel",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                              "boxShadow": "none",
-                              "iconAlign": "left",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isSpellCheck": false,
-                              "isVisible": true,
-                              "labelTextSize": "0.875rem",
-                              "label": "Artikel"
-                            },
-                            "hoeveelheid": {
-                              "children": {},
-                              "dataType": "string",
-                              "fieldType": "Text Input",
-                              "sourceData": "",
-                              "isCustomField": false,
-                              "accessor": "hoeveelheid",
-                              "identifier": "hoeveelheid",
-                              "position": 1,
-                              "originalIdentifier": "hoeveelheid",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                              "boxShadow": "none",
-                              "iconAlign": "left",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isSpellCheck": false,
-                              "isVisible": true,
-                              "labelTextSize": "0.875rem",
-                              "label": "Hoeveelheid"
-                            },
-                            "ean": {
-                              "children": {},
-                              "dataType": "string",
-                              "fieldType": "Text Input",
-                              "sourceData": "",
-                              "isCustomField": false,
-                              "accessor": "ean",
-                              "identifier": "ean",
-                              "position": 2,
-                              "originalIdentifier": "ean",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                              "boxShadow": "none",
-                              "iconAlign": "left",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isSpellCheck": false,
-                              "isVisible": true,
-                              "labelTextSize": "0.875rem",
-                              "label": "Ean"
-                            }
-                          },
-                          "dataType": "object",
-                          "fieldType": "Object",
-                          "sourceData": {
-                            "Artikel": "",
-                            "Hoeveelheid": 0
-                          },
-                          "isCustomField": false,
-                          "accessor": "__array_item__",
-                          "identifier": "__array_item__",
-                          "position": -1,
-                          "originalIdentifier": "__array_item__",
-                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                          "boxShadow": "none",
-                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                          "cellBoxShadow": "none",
-                          "isDisabled": false,
-                          "isRequired": false,
-                          "isVisible": true,
-                          "labelTextSize": "0.875rem",
-                          "label": "Array Item"
-                        }
-                      },
-                      "dataType": "array",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Welke artikelen en hoeveelheden heb je teruggelegd in de container?\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "fieldType": "Array",
-                      "sourceData": [
-                        {
-                          "Artikel": "",
-                          "Hoeveelheid": 0
-                        }
-                      ],
-                      "isCustomField": false,
-                      "accessor": "Welke artikelen en hoeveelheden heb je teruggelegd in de container?",
-                      "identifier": "Welke_artikelen_en_hoeveelheden_heb_je_teruggelegd_in_de_container_",
-                      "position": 4,
-                      "originalIdentifier": "Welke artikelen en hoeveelheden heb je teruggelegd in de container?",
-                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "boxShadow": "none",
-                      "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-                      "cellBoxShadow": "none",
-                      "backgroundColor": "#FAFAFA",
-                      "isCollapsible": true,
-                      "isDisabled": false,
-                      "isRequired": false,
-                      "isVisible": true,
-                      "labelTextSize": "0.875rem",
-                      "label": "Welke Artikelen En Hoeveelheden Heb Je Teruggelegd In De Container"
+                      "label": "Waren Er Andere Mensen Aanwezig Bij Aankomst"
                     }
                   },
                   "dataType": "object",
@@ -816,14 +472,14 @@
               },
               "dynamicPropertyPathList": [
                 {
-                  "key": "schema.__root_schema__.children.is_de_bouwplaats_opgeruimd_.defaultValue"
+                  "key": "schema.__root_schema__.children.Was_de_bouwplaats_opgeruimd_bij_aankomst_.defaultValue"
                 },
                 {
-                  "key": "schema.__root_schema__.children.Datum_van_controle_.defaultValue"
+                  "key": "schema.__root_schema__.children.Waren_er_andere_mensen_aanwezig_bij_aankomst_.defaultValue"
                 }
               ],
               "displayName": "JSON Form",
-              "bottomRow": 82,
+              "bottomRow": 58,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Form",
@@ -846,6 +502,54 @@
               "originalTopRow": 27,
               "maxDynamicHeight": 9000,
               "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "IconButton1",
+              "onClick": "{{navigateTo('Formulieren - Overzicht', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 22,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "qeebr6rh9k",
+              "isDeprecated": false,
+              "rightColumn": 4,
+              "iconName": "arrow-left",
+              "widgetId": "vwdkk7jlh3",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 22,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 26,
+              "buttonVariant": "PRIMARY"
             }
           ]
         },

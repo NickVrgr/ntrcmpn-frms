@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetLoggedInUser",
+    "name": "InsertForm",
     "datasource": {
       "name": "Intercompany_forms",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select user_email,user_name, session_expiration_date from vrgr_vargar.users\nwhere session_id = {{appsmith.store.userSession.session_id}}",
+      "body": "INSERT INTO vrgr_vargar.forms\n  (name, type, created_by)\nVALUES\n  (\n    {{Input_FormName.inputText}},\n    'auto',\n    {{GetLoggedInUser.data[0].user_email}}\n  );",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.userSession.session_id"
+      "GetLoggedInUser.data[0].user_email",
+      "Input_FormName.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin - Formulieren_GetLoggedInUser",
+  "id": "Admin - Formulieren_InsertForm",
   "deleted": false,
-  "gitSyncId": "63aac04e67086437e017196b_63b53813b4cde27268a7f8b1"
+  "gitSyncId": "63aac04e67086437e017196b_63bd31b76277e132550de147"
 }

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  let questions = {};\n  GetFormContent.data.forEach(question => {\n    switch (question.answer_type) {\n      case 'Tekst':\n        questions[question.form_question] = \"\";\n        break;\n      case 'Getal':\n        questions[question.form_question] = 0;\n        break;\n      case 'boolean':\n        questions[question.form_question] = true;\n        break;\n      case 'Datum':\n        questions[question.form_question] = moment().format('DD-MM-YYYY');\n        break;\n      case 'Lijst':\n        var list_properties = {};\n        question.list_properties.split(',').map(property => list_properties[property] = \"\");\n        questions[question.form_question] = [list_properties];\n    }\n  });\n  return questions;\n}",
+      "body": "() => {\n  let questions = {};\n  GetFormContent.data.forEach(question => {\n    switch (question.answer_type) {\n      case 'Tekst':\n        questions[question.form_question] = \"\";\n        break;\n      case 'Getal':\n        questions[question.form_question] = 0;\n        break;\n      case 'Ja/Nee':\n        questions[question.form_question] = true;\n        break;\n      case 'Datum':\n        questions[question.form_question] = moment().format('DD-MM-YYYY');\n        break;\n      case 'Lijst':\n        var list_properties = {};\n        question.list_properties.split(',').map(property => list_properties[property] = \"\");\n        questions[question.form_question] = [list_properties];\n    }\n  });\n  return questions;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  let questions = {};\n  GetFormContent.data.forEach(question => {\n    switch (question.answer_type) {\n      case 'Tekst':\n        questions[question.form_question] = \"\";\n        break;\n      case 'Getal':\n        questions[question.form_question] = 0;\n        break;\n      case 'boolean':\n        questions[question.form_question] = true;\n        break;\n      case 'Datum':\n        questions[question.form_question] = moment().format('DD-MM-YYYY');\n        break;\n      case 'Lijst':\n        var list_properties = {};\n        question.list_properties.split(',').map(property => list_properties[property] = \"\");\n        questions[question.form_question] = [list_properties];\n    }\n  });\n  return questions;\n}"
+      "() => {\n  let questions = {};\n  GetFormContent.data.forEach(question => {\n    switch (question.answer_type) {\n      case 'Tekst':\n        questions[question.form_question] = \"\";\n        break;\n      case 'Getal':\n        questions[question.form_question] = 0;\n        break;\n      case 'Ja/Nee':\n        questions[question.form_question] = true;\n        break;\n      case 'Datum':\n        questions[question.form_question] = moment().format('DD-MM-YYYY');\n        break;\n      case 'Lijst':\n        var list_properties = {};\n        question.list_properties.split(',').map(property => list_properties[property] = \"\");\n        questions[question.form_question] = [list_properties];\n    }\n  });\n  return questions;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
